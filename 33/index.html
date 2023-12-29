@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 33</title>
+</head>
+<body>
+    <script>
+        const myUndefined = undefined;
+        const myNull = null;
+        const myBoolean = true;
+        const myNumber = 10;
+        const myBigInt = BigInt(9007199254740991);
+        const mySymbol = Symbol('foo');
+        const myString = 'string';
+
+        const myObject = {name: 'Alex'};
+        const myArray = [1,2,3];
+        const myFunction = function(){return 0};
+        const myDate = new Date('2003-04-28');
+
+        console.log('myUndefined:', Number(myUndefined), Boolean(myUndefined), String(myUndefined));
+        console.log('myNull:', Number(myNull), Boolean(myNull), String(myNull));
+        console.log('myBoolean:', Number(myBoolean), Boolean(myBoolean), String(myBoolean));
+        console.log('myNumber:', Number(myNumber), Boolean(myNumber), String(myNumber));
+        console.log('myBigInt:', Number(myBigInt), Boolean(myBigInt), String(myBigInt));
+
+        console.log('mySymbol:', 'N/A', Boolean(mySymbol), String(mySymbol));
+        console.log('myString:', Number(myString), Boolean(myString), String(myString));
+
+        console.log('myObject:', myObject.valueOf(), Boolean(myObject), myObject.toString());
+        console.log('myArray:', myArray.valueOf(), Boolean(myArray), myArray.toString());
+        console.log('myFunction:', myFunction.valueOf(), Boolean(myFunction), myFunction.toString());
+        console.log('myDate:', myDate.valueOf(), Boolean(myDate), myDate.toString());
+    </script>
+</body>
+</html>

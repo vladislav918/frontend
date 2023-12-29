@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 28.1</title>
+</head>
+<body>
+    <script>
+        const myUndefined = undefined;
+        const myNull = null;
+        const myBoolean = true;
+        const myNumber = 10;
+        const myBigInt = BigInt(9007199254740991);
+        const mySymbol = Symbol('foo');
+        const myString = 'string';
+
+        console.log('myUndefined');
+        console.log(myUndefined);
+        console.dir(myUndefined);
+
+        console.log('myNull');
+        console.log(myNull);
+        console.dir(myNull);
+
+        console.log('myBoolean');
+        console.log(myBoolean);
+        console.dir(myBoolean);
+
+        console.log('myNumber');
+        console.log(myNumber);
+        console.dir(myNumber);
+
+        console.log('myBigInt');
+        console.log(myBigInt);
+        console.dir(myBigInt);
+
+        console.log('mySymbol');
+        console.log(mySymbol);
+        console.dir(mySymbol);
+
+        console.log('myString');
+        console.log(myString);
+        console.dir(myString);
+
+        const myObject = {name: 'Alex'};
+        const myArray = [1,2,3];
+        const myFunction = function(){return 0};
+        const myDate = new Date('2003-04-28');
+
+        console.log('myObject');
+        console.log(myObject);
+        console.dir(myObject);
+
+        console.log('myArray');
+        console.log(myArray);
+        console.dir(myArray);
+
+        console.log('myFunction');
+        console.log(myFunction);
+        console.dir(myFunction);
+
+        console.log('myDate');
+        console.log(myDate);
+        console.dir(myDate);
+
+    </script>
+</body>
+</html>
